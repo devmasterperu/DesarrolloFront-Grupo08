@@ -5,8 +5,18 @@
     <title>Devmaster</title>
 </head>
 <body>
-    <form>
-        <input type="text">
+    <!-- autocomplete="off" ➡️ para anular sugerencias de las cajas de texto -->
+    <form action="contacto-exitoso.html" method="POST" autocomplete="off">
+        <!-- <input type="text" placeholder="Nombres y Apellidos"> -->
+        <!-- <label>Nombres y Apellidos:
+            <input type="text">
+        </label> -->
+        <!-- required ➡️ campos obligatorios -->
+        <label for="user">Usuario:</label>
+        <input type="text" id="user" name="user" required><br>
+        <label for="pass">Contraseña:</label>
+        <input type="password" id="pass" name="pass" required><br>
+        <input type="submit">
     </form>
 </body>
 </html>
