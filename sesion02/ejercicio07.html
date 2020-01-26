@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Devmaster</title>
+    <style>
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="POST" autocomplete="off" enctype="multipart/form-data">
+        <label for="user">Nombre:</label>
+        <input type="text" id="user" name="user" required><br>
+
+        <label for="sexo">Sexo:</label>
+        <input type="radio" name="sexo">Masculino
+        <input type="radio" name="sexo" checked>Femenino<br>
+
+        <label for="pais">Pais</label>
+        <select name="pais" id="pais">
+            <option value="0">Perú</option>
+            <option value="1">Argentina</option>
+            <option value="2">Brasil</option>
+        </select><br>
+
+        <label for="pass">Archivo:</label>
+        <input type="file" id="pass" name="pass" required><br>
+
+        <label for="nota">Nota Adicional:</label><br>
+        <textarea id="nota" name="nota" cols="30" rows="10"></textarea><br>
+
+        <input type="checkbox"> He leido los <a href="terminos-condiciones.html" target="_blank">Terminos y condiciones</a> <br>
+        
+        <button type="submit">Enviar</button>
+        <button type="reset">Restablesca</button>
+        <button type="button">Ver más</button>
+    </form>
+</body>
+</html>
