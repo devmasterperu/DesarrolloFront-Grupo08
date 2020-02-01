@@ -1,0 +1,35 @@
+body {
+    background-color: aqua; /* color de fondo del elemento */
+}
+
+h1 {
+    color: red;
+    font-family: 'Sigmar One', cursive;
+    /* font-family: serif; */
+}
+
+h2 {
+    font-family: sans-serif;
+}
+
+span {
+    /* font-family: monospace; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; /* 300 - 400 -  700*/
+}
+
+em {
+    /* font-family: cursive; */
+    font-family: 'Roboto', sans-serif;
+}
+
+small {
+    /* font-family: fantasy; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    color: blue;
+}
+

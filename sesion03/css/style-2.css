@@ -1,0 +1,49 @@
+@font-face {
+    font-family: Barlow;
+    src:    url("../fonts/barlow-bold-webfont.eot")     format("embedded-opentype"),
+            url("../fonts/barlow-bold-webfont.woff")    format("woff"),
+            url("../fonts/barlow-bold-webfont.woff2")   format("woff2"),
+            url("../fonts/barlow-bold-webfont.ttf")     format("truetype"),
+            url("../fonts/barlow-bold-webfont.svg")     format("svg");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Barlow;
+    src:    url("../fonts/barlow-thin-webfont.eot")     format("embedded-opentype"),
+            url("../fonts/barlow-thin-webfont.woff")    format("woff"),
+            url("../fonts/barlow-thin-webfont.woff2")   format("woff2"),
+            url("../fonts/barlow-thin-webfont.ttf")     format("truetype"),
+            url("../fonts/barlow-thin-webfont.svg")     format("svg");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "RBNo3.1";
+    src: url("../fonts/RBNo31-Light.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/RBNo31-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("../fonts/RBNo31-Light.otf") format("opentype"), /* Open Type Font */
+      url("../fonts/RBNo31-Light.svg") format("svg"), /* Legacy iOS */
+      url("../fonts/RBNo31-Light.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("../fonts/RBNo31-Light.woff") format("woff"), /* Modern Browsers */
+      url("../fonts/RBNo31-Light.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: 300;
+    font-style: normal;
+  }
+
+h2 {
+    font-family: Barlow;
+    font-weight: 700;
+}
+
+p {
+    font-family: Barlow;
+    font-weight: 100;
+}
+
+h3 {
+    font-family: "RBNo3.1";
+    font-weight: 300;
+}
