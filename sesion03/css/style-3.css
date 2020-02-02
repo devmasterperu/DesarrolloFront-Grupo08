@@ -1,0 +1,10 @@
+section {
+    display: -webkit-box;
+    display: flex;
+}
+.article-1 {
+    background-color: skyblue;
+}
+.article-2 {
+    background-color: tomato;
+}
