@@ -1,0 +1,27 @@
+h1 {
+    color: red;
+    text-decoration: underline;
+
+}
+h2 {
+    color: green;
+}
+.subrayado {
+    text-decoration: underline;
+}
+.parrafo {
+    text-align: center;
+}
+.mayuscula {
+    text-transform: uppercase;
+}
+#titulo {
+    background-color: springgreen;
+}
+/* https://mothereff.in/css-escapes */
+/* .\31 23 {
+    color: grey;
+} */
+[class="123"] {
+ color: magenta;
+}

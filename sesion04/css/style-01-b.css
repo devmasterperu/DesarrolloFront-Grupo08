@@ -1,0 +1,19 @@
+h1 { /* selector de etiqueta */
+    color: red;
+    text-decoration: underline;
+    /* text-transform: uppercase; */
+}
+h2 {
+    color: green;
+    /* text-transform: uppercase; */
+}
+h1, /* selector de agrupamiento */
+h2 {
+    text-transform: uppercase;
+}
+.subrayado { /* selector de clases */
+    text-decoration: underline; 
+}
+.parrafo {
+    text-align: center;
+}

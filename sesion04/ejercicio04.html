@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Devmaster | </title>
+    <style>
+        /* [class*="btn"] { */
+        [class="btn"] {
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            display: inline-block;
+            /* text-transform: uppercase; */
+            padding: 10px;
+            border-radius: 7px;
+        }
+        [class^="parrafo-"]{
+            line-height: 22px;
+        }
+        [href^="https"] {
+            border: 1px solid tomato;
+        }
+        [href$=".pdf"]{
+            text-transform: uppercase;
+        }
+        a:hover {
+            background-color: lightskyblue;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Devmaster</h1>
+        <p class="parrafo-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quasi? Quaerat excepturi sequi minus, voluptatem ab placeat maiores? Distinctio, repellat commodi soluta excepturi atque ipsam voluptas aut velit incidunt cum!</p>
+        <p class="parrafo-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, magni recusandae, reiciendis veritatis omnis nulla, in beatae iure aliquam corrupti aut quidem voluptatibus! Delectus nulla voluptatem mollitia velit, deleniti illum?</p>
+        <p class="parrafo-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aliquid at voluptatem ratione necessitatibus, ullam iure? Sapiente eaque totam, voluptatibus quas, possimus quae placeat doloremque incidunt inventore iusto temporibus. Ratione!</p>
+        <a class="btn" href="https://www.facebook.com/">facebook</a>
+        <a class="btn" href="https://www.instagram.com/?hl=es-la">instagram</a>
+        <a class="btn" href="pdf/test.pdf">pdf</a>
+    </article>
+</body>
+</html>
