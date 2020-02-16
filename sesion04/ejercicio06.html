@@ -3,6 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <title>Devmaster | </title>
+    <style>
+        .selector1 p:nth-child(1) {
+            color: springgreen;
+        }
+        .selector1 p:nth-child(3) {
+            color: deeppink;
+        }
+        .selector2 p:first-child {
+            color:deepskyblue;
+        }
+        .selector2 p:last-child {
+            color: firebrick;
+        }
+        .selector3 li:nth-child(even) {
+            color: springgreen;
+        }
+        .selector4 li:nth-child(odd){
+            color: deeppink;
+        }
+        .selector5 :nth-last-child(4) {
+            color: orange;
+        }
+        .selector5 :nth-last-child(9) {
+            color: tomato;
+        }
+        .selector5 h3:nth-last-of-type(3) {
+            color: green;
+        }
+        .selector5 p:nth-last-of-type(5) {
+            color: blueviolet;
+            text-decoration: line-through;
+        }
+        .selector6 div:nth-of-type(2) {
+            background-color: springgreen;
+        }
+        .selector6 p:nth-of-type(3) {
+            background-color: deeppink;
+        }
+        .selector7 p:first-of-type {
+            text-transform: uppercase;
+        }
+        .selector7 p:last-of-type {
+            text-transform: uppercase;
+        }
+        .selector7  i:only-of-type {
+            color: cornflowerblue;
+        }
+        .selector8 li:not(:last-child) {
+            color: green;
+            text-transform: uppercase;
+        }
+        .selector8 li:empty {
+            display: none;
+        }
+        .selector9 p:first-child:first-line {
+            color: deepskyblue;
+        }
+        .selector9 p:first-child:first-letter {
+            text-transform: uppercase;
+            font-size: 32px;
+        }
+    </style>
 </head>
 <body>
     <section class="selector1">
@@ -13,9 +75,9 @@
     <br>
     <br>
     <section class="selector2">
-        <p>Generate Lorem Ipsum placeholder text. Select the number of characters, words.</p>
-        <p>Generate Lorem Ipsum placeholder text. Select the number of characters, words.</p>
-        <p>Generate Lorem Ipsum placeholder text. Select the number of characters, words.</p>
+        <p>Generate Lorem Ipsum placeholder the number of characters, words.</p>
+        <p>Generate Lorem Ipsum placeholder the number of characters, words.</p>
+        <p>Generate Lorem Ipsum placeholder the number of characters, words.</p>
     </section>
     <br>
     <br>
