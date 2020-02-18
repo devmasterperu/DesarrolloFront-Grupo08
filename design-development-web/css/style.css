@@ -1,0 +1,62 @@
+/* font-family: 'Zilla Slab', serif;
+font-family: 'Raleway', sans-serif; */
+/****************
+Font
+****************/
+/* Google Fonts */
+/****************
+Typography
+****************/
+html {
+    font-size: 18px;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px; /* convertir a em */
+    line-height: 23px;
+}
+h1 {
+    font-size: 70px;
+    line-height: 84px;
+}
+h2 {
+    font-size: 50px;
+    line-height: 60px;
+}
+h3 {
+    font-size: 44px;
+    line-height: 51px;
+}
+h6 {
+    font-size: 18px;
+    line-height: 21px;
+}
+h1,
+h2,
+h3,
+h6 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 700;
+}
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h6:first-child {
+    padding: 0;
+    margin: 0;
+}
+p {
+    line-height: 23px;
+    margin-bottom: 19px;
+}
+a {
+  font-weight: 700;
+}
+
+
+
+
+
+
+
