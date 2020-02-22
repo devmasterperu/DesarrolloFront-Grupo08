@@ -53,7 +53,13 @@ p {
 a {
   font-weight: 700;
 }
-
+figure {
+    margin: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 
 
