@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Devmaster | </title>
+    <style>
+        section {
+            width: 800px;
+            height: 400px;
+            background-color: skyblue;
+
+            display: flex;
+            flex-direction: row;            /* row 👶🏼 | row-reverse | column | column-rever */
+            justify-content: center;    /* normal 👶🏼 | flex-start | flex-end | center | space-between | space-around */
+            flex-wrap: nowrap;                /* nowrap 👶🏼 | wrap | wrap-reverse */
+
+            /* flex-flow: flex-direction flex-wrap */
+            /* flex-flow: column wrap; */
+
+            align-items: flex-end; /* normal 👶🏼 | flex-start | flex-end | center  */
+        }
+        article {
+            width: 100px;
+            height: 100px;
+        }
+        article:nth-child(1) {
+            background-color: springgreen;
+        }
+        article:nth-child(2) {
+            background-color: salmon;
+        }
+        article:nth-child(3) {
+            background-color: magenta;
+        }
+        article:nth-child(4) {
+            background-color: darkolivegreen;
+        }
+    </style>
+</head>
+<body>
+    <section> <!-- padre -->
+        <article>1</article> <!-- hijo -->
+        <article>2</article> <!-- hijo -->
+        <article>3</article> <!-- hijo -->
+        <article>4</article> <!-- hijo -->
+    </section>
+</body>
+</html>
