@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Devmaster | </title>
+    <style>
+        /* Pseudo elementos :after y :before */
+        .pseudo-1:before {
+            content: "hola, ";
+        }
+        .pseudo-1:after {
+            content: ". Bienvenido";
+        }
+        .pseudo-2:before {
+            content:"";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: hsl(9, 100%, 64%);
+            border-radius: 50%;
+        }
+        .pseudo-2:after {
+            content:"";
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-top-width: 10px;
+            border-right-width: 10px;
+            border-bottom-width: 0;
+            border-left-width: 10px;
+            border-top-color: #00ff80;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+        }
+        /* Pseudo Clases */
+        a {
+            text-decoration: none;
+        }
+        a:link {
+            color: blue /* no fue visitado */
+        }
+        a:visited {
+            color: green; /* fue visitado */
+        }
+        a:hover {
+            color: yellow; /* mouse encima del elemento */
+        }
+        a:active {
+            color: red; /* mantienes el boton del mouse apretado */
+        }
+    </style>
+</head>
+<body>
+    <!-- Pseudo Elementos -->
+    <p class="pseudo-1">Jean Pierre Paucar Rojas, estudiante de la UNJFSC</p>
+    <p class="pseudo-2"> Item 1 </p>
+    
+    <!-- Pseudo Clase -->
+    <a href="https://www.youtube.com/">youtube</a>
+    <a href="http://devmaster.pe/">devmaster</a>
+</body>
+</html>
