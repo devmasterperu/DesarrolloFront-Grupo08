@@ -1,0 +1,68 @@
+/* font-family: 'Montserrat';
+font-family: 'Roboto Slab'; */
+* {
+    box-sizing: border-box;
+}
+figure {
+    margin: 0;
+}
+img {
+    max-width: 100%; /* ancho maximo (imagenes en responsive) */
+    height: auto;
+}
+.card {
+    width: 380px;
+    border: 1px solid #e3e3e3;
+    border-radius: 12px;
+    overflow: hidden;
+    
+    margin-top: 20px;
+    margin-left: 20px;
+
+    box-shadow: 0.5px 0.5px hsla(0, 0%, 0%, 0.16);
+    transition: all 0.2s;
+}
+.card figure {
+    overflow: hidden;
+}
+.card img {
+    display: block;
+    transition: all 0.2s;
+}
+.card-content {
+    padding: 35px 25px 25px;
+}
+.card-content h3 {
+    font-family: 'Roboto Slab'; 
+    font-size: 22px;
+    line-height: 33px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.card-content p {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+.card-content a {
+    font-family: 'Roboto Slab';
+    font-style: 16px; 
+    line-height: 16px;
+    color: #000;
+    text-decoration: none;
+}
+.link {
+    text-align: right;
+}
+/* hover */
+.card:hover {
+    box-shadow: 6px 12px 12px hsla(0, 0%, 0%, 0.16);
+}
+.card:hover img {
+    transform: scale(1.2);
+}
+.card:hover a {
+    color: hsl(218, 99%, 28%);
+}
