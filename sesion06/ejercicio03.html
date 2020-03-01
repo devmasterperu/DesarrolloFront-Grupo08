@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Devmaster | </title>
+    <style>
+        section {
+            width: 800px;
+            height: 400px;
+
+            background-color: springgreen;
+            
+            display: flex;
+            justify-content: space-between;
+        }
+        article {
+            width: 100px;
+            height: 100px;
+        }
+        section :nth-child(1) {
+            background-color: red;
+            order: 3;
+        }
+        section :nth-child(2) {
+            background-color: green;
+            order: 2;
+            align-self: stretch ; /* alinea "un elemento" en el eje secundario.  auto 👶🏼 | flex-start | flex-end | center | strech */
+            height: auto;
+        }
+        section :nth-child(3) {
+            background-color: blue;
+            order: 1;
+        }
+        section :nth-child(4) {
+            background-color: yellow;
+            order: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Repaso Flexbox -->
+    <section> <!-- padre -->
+        <article>1</article> <!-- hijo -->
+        <article>2</article> <!-- hijo -->
+        <article>3</article> <!-- hijo -->
+        <article>4</article> <!-- hijo -->
+    </section>
+</body>
+</html>
