@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Devmaster | </title>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/4e8c731652.js" crossorigin="anonymous"></script>
+    <!-- Linearicons -->
+    <link rel="stylesheet" href="css/linearicons.css">
+    <style>
+        .lista li {
+            font-family: 'Linearicons';
+        }
+        .lista :nth-child(1):before {
+            content:"\e6d4";
+        }
+        .lista :nth-child(2):before {
+            content:"\e6dd";
+        }
+    </style>
+</head>
+<body>
+    <!-- Font Awesome + Linearicons -->
+    <!-- Utilizando el atributo Class (Font Awesome)-->
+    <ul>
+        <li><i class="fab fa-facebook-f"></i>Item 1</li>
+        <li><i class="fab fa-twitter"></i>Item 2</li>
+        <li><i class="fab fa-instagram"></i>Item 3</li>
+        <li><i class="fab fa-google-plus-g"></i>Item 4</li>
+    </ul>
+    <!-- Utilizando pseudo elemento (Linearicons)-->
+    <ul class="lista">
+        <li> Item 1</li>
+        <li> Item 2</li>
+    </ul>
+    <!-- Utilizando el atributo Class (Linearicons)-->
+    <ul>
+        <li><span class="icon-code"></span> Item 3</li>
+        <li><span class="icon-thumbs-up3"></span> Item 4</li>
+    </ul>
+</body>
+</html>
