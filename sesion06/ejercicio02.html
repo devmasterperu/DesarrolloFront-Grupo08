@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Devmaster | </title>
+    <style>
+        section {
+            width: 800px;
+            height: 400px;
+
+            background-color: springgreen;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            /* align-items: normal; */
+            align-content: strech;/* flex-start | flex-end | center | space-between | space-around | */
+        }
+        article {
+            width: 250px;
+            /* height: 100px; */
+        }
+        section :nth-child(1) {
+            background-color: red;
+            order: 3;
+        }
+        section :nth-child(2) {
+            background-color: green;
+            order: 2;
+        }
+        section :nth-child(3) {
+            background-color: blue;
+            order: 1;
+        }
+        section :nth-child(4) {
+            background-color: yellow;
+            order: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Repaso Flexbox -->
+    <section>
+        <article>1</article>
+        <article>2</article>
+        <article>3</article>
+        <article>4</article>
+    </section>
+</body>
+</html>
