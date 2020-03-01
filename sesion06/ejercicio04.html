@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Devmaster | </title>
+    <style>
+        :root {
+            --primary-color: #3F82EE; /* variables en css */
+            --primary-background: hsla(240, 100%, 50%,0.5); /* variables en css */
+        }
+        .titulo {
+            color: var(--primary-color); /* Hexadecimal */
+        }
+        p {
+            color: #F4B707; /* Hexadecimal */
+        }
+        /*  
+            Hexadecimal reducido
+            #000000 ➡️ negro 
+            #FFFFFF ➡️ blanco
+
+            #000    ➡️ negro
+            #FFF    ➡️ blanco
+        */
+        span {
+            color: rgb(244,183,7);
+        }
+        .caja-1 {
+            height: 300px;
+            background-color: rgb(244,183,7);
+        }
+        .caja-2 {
+            height: 300px;
+            /* background-color: rgba(244,183,7,0.5); a = canal alfa (transparencia) */
+            /* background-color: hsl(45, 95%, 49%); */
+            background-color: var(--primary-background); /* a = canal alfa (transparencia) */
+        } 
+    </style>
+</head>
+<body>
+    <!-- Colores en CSS: Por su nombre, hexadecimal, hexadecimal reducido, rgb(), rgba(), hsl() y hsla() -->
+    <h1 class="titulo">Devmaster - <span>Huacho</span></h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium rerum quis consectetur. Sequi delectus cum animi vero hic aliquid repellendus fugit, aut velit, incidunt rerum maxime dolorum nihil ut inventore?</p>
+    <div class="caja-1"></div>
+    <div class="caja-2"></div>
+</body>
+</html>
