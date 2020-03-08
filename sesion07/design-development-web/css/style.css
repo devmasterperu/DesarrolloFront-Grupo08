@@ -93,6 +93,14 @@ img {
     padding-right: 10px;
 }
 /* hero-banner */
+.main-hero-banner{
+    background-image:   linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 100%),
+                        url(../img/hero-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
 .hero-banner {
     height: 600px;
     display: flex;
@@ -124,6 +132,7 @@ img {
     padding: 12px 29px;
     border-radius: 8px;
     text-transform: uppercase;
+    min-width: 182px;
 }
 .btn.btn-dark {
     background-color: var(--primary-color);
@@ -170,6 +179,9 @@ img {
     max-width: 380px;
     width: 32.2033898305%;
     margin-bottom: 41px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.16);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
 }
 .card figure img {
     display: block
@@ -285,18 +297,34 @@ img {
     font-size: 26px;
 }
 
-@media screen and (max-width: 1024px) {
+/****************
+Media Queries
+****************/
+/* Tablets */
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 992px) {
+    /**/
     h1 {
         font-size: 42px;
         line-height: 52px;
+    }
+    h2 {
+        font-size: 32px;
     }
 }
 
 /* Mobile */
 @media screen and (max-width: 768px) {
-    /**/
-    h2 {
-        font-size: 32px;
+    /* Hero Banner */
+    .hero-banner .content div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    .hero-banner .content div a:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 8px;
     }
     /** My Services **/
     .my-services .grid {
@@ -320,5 +348,13 @@ img {
     }
     .description .grid .grid-item:not(:last-child) {
         margin-bottom: 21px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    /** Gallery **/
+    .gallery figure:first-child,
+    .gallery figure:last-child {
+        display: none;
     }
 }
