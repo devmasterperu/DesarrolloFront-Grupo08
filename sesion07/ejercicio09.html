@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devmaster | </title>
+    <style>
+        header,
+        footer {
+            height: 300px;
+            background-color: grey;
+        }
+        main {
+            display: flex;
+        }
+        section,
+        aside {
+            height: 600px;
+            width: 50%;
+        }
+        section {
+            background-color: springgreen;
+        }
+        aside {
+            background-color: deeppink;
+        }
+        /* cuando este en un ancho maximo de */
+        @media screen and (max-width: 992px) {
+            header,
+            footer {
+                background-color: orange;
+                height: 120px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            section,
+            aside {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 640px) {
+            header {
+                background-color: red;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            main {
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section></section>
+        <aside></aside>
+    </main>
+    <footer></footer>
+</body>
+</html>

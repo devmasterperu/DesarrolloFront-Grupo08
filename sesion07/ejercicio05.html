@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Devmaster | </title>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/4e8c731652.js" crossorigin="anonymous"></script>
+    <!-- Css -->
+    <style>
+        figure {
+            margin: 0;
+            border: 1px solid grey;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 7px;
+            overflow: hidden;
+
+            position: relative;
+        }
+
+        figure:hover figcaption {
+            opacity: 1;
+        }
+
+        /* Primera solucion 😁 */
+        /* figure:hover img {
+            opacity: 0.8;
+        } */
+
+        img {
+            display: block;
+        }
+
+        figcaption {
+            background-color: rgba(0, 0, 0,0.9);
+            width: 100%; /* + */
+            height: 100%; /* + */
+
+            color: #fff;
+            font-size: 22px;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            opacity: 0;
+            transition: all 0.2s;
+        }
+        .social-network {
+            display: flex;
+
+            position: fixed;
+            top: 130px;
+            right: 0;
+        }
+        .social-network ul {
+            margin: 0;
+            padding: 0;
+            border: 2px solid grey;
+        }
+        .social-network li {
+            width: 34px;
+            height: 34px;
+            background-color: rgb(1, 52, 140);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .social-network li:not(:last-child) {
+            border-bottom: 2px solid grey;
+        }
+        .social-network a {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Oradores</h1>
+        <figure>
+            <img src="img/aguirre-0891dd9177.jpg" alt="">
+            <figcaption>Gonzalo Aguirre</figcaption>
+        </figure>
+        <p>Proximamente más oradores.. </p>
+    </section>
+    <section>
+        <h2>Descripción</h2>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat distinctio soluta ut suscipit eum numquam dignissimos blanditiis at adipisci odio vitae deleniti, dolore nobis qui similique voluptatum, neque ipsum placeat?
+        Impedit fugit quasi, inventore aperiam provident quas ad tenetur maiores quia commodi modi neque vitae minima iusto expedita dolorem soluta animi, labore quisquam omnis distinctio, id praesentium. Ab, corrupti ex.
+        Corrupti, sequi ea tempore voluptatibus doloremque architecto, tenetur, consectetur blanditiis laborum voluptates quaerat ducimus? Officia, aspernatur commodi expedita sint velit fuga illum, alias consequuntur, voluptatibus cupiditate dolor? Accusamus, eveniet nulla!
+        Quia, ut tenetur voluptatum natus qui quaerat officia illum molestiae atque animi iure, fugit magnam id molestias cum similique reiciendis ducimus odio reprehenderit rerum veritatis iusto! Hic soluta et cupiditate?
+        Repellendus, corporis obcaecati qui veritatis modi veniam! Ratione quaerat atque, dolores deserunt laborum voluptatem, eius aspernatur et quas reiciendis sit odio iusto quam animi, itaque cupiditate. Quaerat quia nemo ipsum!
+        Magni deleniti id nesciunt at, reprehenderit omnis nisi delectus, corrupti accusamus voluptatum optio quisquam expedita impedit! Quasi amet mollitia voluptatibus. Exercitationem rem, atque eos laborum dolorum necessitatibus ipsum inventore officiis?
+        Dolores maxime optio reiciendis vero blanditiis distinctio, totam numquam itaque perferendis inventore molestiae aliquid ex? Et voluptatem deserunt soluta molestiae odit deleniti libero ex veritatis. Reiciendis debitis quos ducimus voluptate!
+        Mollitia quidem a deserunt iure libero facere laborum laudantium aperiam perspiciatis ipsum molestias, dignissimos repudiandae? Veniam magni nam soluta doloremque, quos suscipit nihil exercitationem, ipsum ab quaerat explicabo cumque iusto.
+        Fuga corrupti cupiditate odit alias tempora et amet expedita, mollitia totam eius recusandae nostrum voluptas, eligendi deleniti, a sit ullam veritatis laudantium tenetur nam magnam adipisci delectus. Ratione, maxime? Eos?
+        Laudantium saepe fuga facilis nemo id illo aliquam numquam vel molestias vero unde iure quisquam praesentium et doloribus dolorum, dolores harum. Saepe magni pariatur a dolor aliquam voluptatibus odit facilis.</article>
+    </section>
+    <nav class="social-network">
+        <ul>
+            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </nav>
+</body>
+</html>

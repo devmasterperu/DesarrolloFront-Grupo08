@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Devmaster | </title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .box {
+            width: 600px;
+            height: 400px;
+
+            background-color: hsl(9, 100%, 64%);
+
+            position: relative;
+        }
+        .box div {
+            width: 100px;
+            height: 100px;
+        }
+        .box :nth-child(1) {
+            background-color: green;
+
+            border: 3px dashed blue;
+
+            position: absolute;
+            top: 0px;
+            left: 0;
+
+            z-index: 2;
+        }
+        .box :nth-child(2) {
+            background-color: orange;
+
+            position: absolute;
+            top: 50px;
+            left: 50px;
+
+            z-index: 3;
+        }
+        .box :nth-child(3) {
+            background-color: red;
+
+            position: absolute;
+            top: 50px;
+            left: 0;
+
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
