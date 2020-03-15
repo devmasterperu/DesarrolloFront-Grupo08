@@ -105,6 +105,11 @@ img {
     background-color: var(--terteary-color);
     padding: 10px 56px;
     border-radius: 42px;
+
+    transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+    background-color: var(--color-black);
 }
 /* description */
 .main-description {
@@ -117,14 +122,14 @@ img {
     flex-wrap: wrap;
 }
 .grid .card:not(:last-child) {
-    margin-right: 4.4642857143%; /* (1120- (242*4))/3 */
+    margin-right: 4.4642857143%; /* (1120-(242*4))/3 */
 }
-.card {
+.grid .card {
     max-width: 242px;
     width: 21.6071428571%;
     margin-bottom: 89px;
 }
-.card figcaption {
+.grid .card figcaption {
     color: var(--primary-color);
     font-size: 21px;
     line-height: 28px;
