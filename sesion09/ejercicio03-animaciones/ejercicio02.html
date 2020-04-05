@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Devmaster | </title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(45deg, #4f00bc, #29abe2);
+            border: 7px dashed springgreen;
+            border-radius: 50%;
+
+            animation-name: translateBox;
+            animation-duration: 3s;
+
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s; /* Tiempo de espera para empezar una animación */
+            animation-iteration-count: 1; /* numero | infinite */
+            animation-direction: normal; /* normal | reverse | alternate | alternate-reverse*/
+            animation-fill-mode: forwards; /* backwards | forwards */
+            animation-play-state: running; /* paused */
+        }
+
+        @keyframes translateBox {
+            0% {
+                opacity: 0;
+                transform: translateX(0);
+                border: 7px dashed springgreen;
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(800px);
+                border: 1px dashed deeppink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

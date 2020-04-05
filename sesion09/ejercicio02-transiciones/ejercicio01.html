@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Devmaster | </title>
+    <style>
+        button {
+            min-width: 140px;
+            height: 40px;
+            background-color: hsl(0, 0%, 0%);
+            color: white;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            /* transition: all .5s; */
+            /* transition: background-color .5s ease-in-out 0s; */
+            transition: background-color .5s cubic-bezier(0.42,0,0.58,1) 0s;
+            /* transition-timing-function personalizados https://cubic-bezier.com/#.17,.67,.83,.67 */
+        }
+
+        button:hover {
+            background-color: #F00303;
+        }
+    </style>
+</head>
+<body>
+    <!-- Transiciones en CSS -->
+    <button>enviar</button>
+</body>
+</html>
