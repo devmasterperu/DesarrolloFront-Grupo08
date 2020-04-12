@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Devmaster | </title>
+</head>
+<body>
+
+    <script>
+        /*
+            For
+        */
+        console.log('***FOR*+**');
+        var miArray = [
+            "Katherine",
+            "Jean Pierre",
+            "Sergio",
+            "Jesús"
+            // ....
+        ]
+
+        // console.log(miArray[0]); // katherine
+        //console.log(miArray[1]); // Jean Pierre
+        miArray[2];
+        miArray[3];
+        // ...
+
+        // Inicio del bucle ; Condicion ; Incremento
+        for (var i = 0; i < miArray.length; i++) {
+            console.log( miArray[i] );
+        }
+
+        console.log('***WHILE*+**');
+
+        var index = 0;
+        while (index < miArray.length ) {
+            console.log(miArray[index]);
+            index++;
+        }
+
+        /*
+            For in
+        */
+        console.log('***FOR IN*+**');
+        var objeto = {
+            curso : "Base de Datos",
+            numeroAlumnos: 3,
+            fecha: new Date()
+        }
+        
+        for (var i in objeto) {
+            // console.log(objeto[i]);
+            /* 
+                Si el valor de la propiedad curso es: "Desarrollo Web Frontend", 
+                por consola imprima: El curso es muy chevere, sino :c
+            */
+            if(objeto.curso == "Desarrollo Web Frontend"){
+                console.log("El curso es muy chevere");
+            }else {
+                console.log(":c");
+            }
+        }
+
+    </script>
+</body>
+</html>

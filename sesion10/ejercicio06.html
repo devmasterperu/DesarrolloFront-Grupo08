@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Devmaster | </title>
+</head>
+<body>
+    <h1>¿Que día de la semana es hoy?</h1>
+    <p>Hoy es: <span id="dia">....</span></p>
+    <script>
+        var fecha = new Date();
+        fecha = fecha.getDay();
+        console.log(fecha);  // 6
+
+        var elementoHtml = document.getElementById("dia");
+
+        switch (fecha) {
+            case 1:
+                elementoHtml.innerHTML = "LUNES";
+                console.log('lunes');
+                break;
+            case 2:
+                elementoHtml.innerHTML = "MARTES";
+                console.log('martes');
+                break;
+            case 3:
+                elementoHtml.innerHTML = "MIERCOLES";
+                console.log('miercoles');
+                break;
+            case 4:
+                elementoHtml.innerHTML = "JUEVES";
+                console.log('jueves');
+                break;
+            case 5:
+                elementoHtml.innerHTML = "VIERNES";
+                console.log('viernes');
+                break;
+            case 6:
+                elementoHtml.innerHTML = "SABADO";
+                console.log('sabado');
+                break;
+            case 7:
+                elementoHtml.innerHTML = "DOMINGO";
+                console.log('doming');
+                break;
+        }
+
+        // PRACTICAR: Obtener los meses del año del objeto Date();
+    </script>
+</body>
+</html>

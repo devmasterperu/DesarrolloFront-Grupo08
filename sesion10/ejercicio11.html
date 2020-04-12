@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Devmaster | </title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background: deeppink;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        p {
+            font-size: 22px;
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Pasar el mouse sobre este elemento
+    </div>
+    <p>Ahora quite el mouse del elemento</p>
+    <!-- jQuery -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script>
+      $(document).ready( function(){
+        $('div').on('mouseenter', function(){
+            $('p').show(500);
+        });
+
+        $('div').on('mouseleave', function(){
+            $('p').hide(1000);
+        });
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Devmaster | </title>
+</head>
+<body>
+    <script>
+        /*
+            Operadores Aritmeticos en JavaScript
+        */
+       var numero1 = 20;
+       var numero2 = 2;
+
+       console.log( numero1 + numero2);
+       console.log( numero1 - numero2);
+       console.log( numero1 * numero2);
+       console.log( numero1 / numero2);
+       console.log( numero1 % numero2); // Residuo de una division
+       console.log( ++numero1 );
+       console.log( --numero1 );
+
+       var texto1 = "Hola, ";
+       var texto2 = "eres bienvenido!";
+       console.log(texto1 + texto2); // Tener en cuenta el signo + en cadena
+
+        /*
+            Operadores de Asignación
+        */
+        var numero = 10;
+        // numero = numero + 5; 
+        // console.log(numero);
+
+        numero += 5; // 15 
+        numero -= 5; // 10
+        numero *= 2  // 20
+        numero /= 2; // 10
+        console.log(numero);
+
+        /*
+            Operadores de Comparación
+        */
+        var valor1 = 40;
+        var valor2 = 20;
+        console.log(valor1 > valor2); // true
+        console.log(valor1 < valor2); // false
+        console.log(valor1 >= valor2); 
+        console.log(valor1 <= valor2); 
+        console.log(valor1 == valor2); 
+        console.log(valor1 === valor2);
+        console.log(valor1 != valor2); // true
+        console.log(valor1 !== valor2); // true
+
+        var num1 = 10;
+        var num2 = "10";
+
+        console.log(num1 == num2);  // true
+        console.log(num1 === num2); // false
+
+        /*
+            Operadores Lógicoss
+            && (AND)=> Las 2 condiciones deben cumplise
+            || (OR) => Al menos 1 de ellas debe cumplirse
+            ! (NOT) => Si una condicion es verdera o false, este operador lógicos invierte el valor
+        */
+
+       // estructura condicional
+        var usuario = prompt("Ingrese Usuario");
+        var contrasenia = prompt("Ingrese Contraseña");
+
+        if (usuario == "admin" && contrasenia == "12345") {
+            alert("Bienvenido");
+        }else {
+            alert("Contraseña incorrecta");
+        }
+    </script>
+</body>
+</html>

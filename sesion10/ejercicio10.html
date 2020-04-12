@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Devmaster | </title>
+</head>
+<body>
+    <button id="btnCorto">Agregar texto corto</button>
+    <button id="btnRegular">Agregar texto regular</button>
+    <button id="btnLargo">Agregar texto largo</button>
+
+    <p>Mensaje corto 😭</p>
+    <!-- jQuery -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script>
+      $(document).ready( function(){
+        $("#btnCorto").on("click", function(){
+            $("p").html("Mensaje corto 😭");
+        });
+        $("#btnRegular").on("click", function(){
+            $("p").html("Mensaje ya no tan corto 🙂");
+        });
+        $("#btnLargo").on("click", function(){
+            $("p").html("Mensaje mucho mas largo que el resto 😁");
+        })
+      });
+  </script>
+</body>
+</html>
