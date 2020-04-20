@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Devmaster | </title>
+    <!-- FlexSlider -->
+    <link rel="stylesheet" href="css/flexslider.css">
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Place somewhere in the <body> of your page -->
+    <div class="flexslider">
+        <ul class="slides">
+        <li style="height: 480px; background-image: url(../plugins/img/slide1.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+            <!-- <img src="img/slide1.jpg" /> -->
+        </li>
+        <li style="height: 480px; background-image: url(../plugins/img/slide2.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+            <!-- <img src="img/slide2.jpg" /> -->
+        </li>
+        <li style="height: 480px; background-image: url(../plugins/img/slide3.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+            <!-- <img src="img/slide3.jpg" /> -->
+        </li>
+        <li style="height: 480px; background-image: url(../plugins/img/slide4.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+            <!-- <img src="img/slide4.jpg" /> -->
+        </li>
+        </ul>
+    </div>
+    <!-- jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <!-- FlexSlider -->
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
+        })
+    </script>
+</body>
+</html>
